@@ -6,12 +6,10 @@ const NAV = [
     label: "Who we are",
     children: [
       { id: "who", href: "who-we-are.html", label: "Our story" },
-      { id: "portfolio", href: "our-portfolio.html", label: "Our portfolio" },
       { id: "hub", href: "innovation-hub.html", label: "Innovation Hub" },
       { id: "research", href: "research-centre.html", label: "Research Centre" },
     ],
   },
-  { id: "quantum", href: "quantum.html", label: "Quantum" },
   { id: "community", href: "our-community.html", label: "Our community" },
   { id: "contact", href: "contact.html", label: "Contact" },
 ];
@@ -75,7 +73,6 @@ function renderFooter() {
               <li><a href="who-we-are.html">Who we are</a></li>
               <li><a href="innovation-hub.html">Innovation Hub</a></li>
               <li><a href="research-centre.html">Research Centre</a></li>
-              <li><a href="quantum.html">Quantum</a></li>
               <li><a href="our-community.html">Our community</a></li>
               <li><a href="contact.html">Contact</a></li>
             </ul>
@@ -88,7 +85,6 @@ function renderFooter() {
               <li><a href="our-community.html#clinicians">Clinicians</a></li>
               <li><a href="our-community.html#patients">Patients</a></li>
               <li><a href="our-community.html#sponsors">Sponsors and partners</a></li>
-              <li><a href="partner-access.html">Partner access</a></li>
             </ul>
           </div>
           <div>
@@ -225,7 +221,7 @@ function countUp(el) {
 const CHAT_RESPONSES = [
   { keys: ["innovation hub", "hub", "innovation"], reply: "The Innovation Hub is our dedicated space for pioneering cancer ideas — offering founders mentorship, clinical access and funding pathways.", link: ["Explore the Innovation Hub", "innovation-hub.html"] },
   { keys: ["research", "centre", "study", "clinical"], reply: "The Research Centre connects clinicians and researchers to accelerate non-invasive early screening, with patients involved in the design of the work.", link: ["Discover the Research Centre", "research-centre.html"] },
-  { keys: ["quantum", "ai", "artificial", "data", "technology"], reply: "We explore how AI and quantum computing could transform cancer diagnostics — from earlier detection to smarter screening tools.", link: ["See Quantum & AI", "quantum.html"] },
+  { keys: ["quantum", "ai", "artificial", "data", "technology"], reply: "We explore how AI and quantum computing could transform cancer diagnostics — from earlier detection to smarter screening tools.", link: ["See Quantum & AI", "research-centre.html"] },
   { keys: ["patient", "experience", "lived"], reply: "Patients shape everything we do. Share your perspective and help design solutions that work in real life.", link: ["Share your experience", "our-community.html#patients"] },
   { keys: ["sponsor", "partner", "invest", "fund"], reply: "We welcome sponsors and partners who want to align with life-saving innovation and gain a visible Midlands platform.", link: ["Become a partner", "contact.html?as=sponsor"] },
   { keys: ["entrepreneur", "founder", "startup", "venture", "idea"], reply: "Entrepreneurs get mentorship, clinical access and funding pathways. Bring an ambitious idea and we will help it move.", link: ["Introduce a venture", "contact.html?as=entrepreneur"] },
@@ -238,7 +234,7 @@ const CHAT_RESPONSES = [
   { keys: ["hello", "hi", "hey"], reply: "Hello, and welcome to Cancer Innovate. Ask me about the Innovation Hub, research, partnerships or how to get involved." },
 ];
 
-const CHAT_FALLBACK = "I can help with the Innovation Hub, Research Centre, Quantum & AI, community pathways or contacting the team. For anything else, write to hello@cancerinnovate.com.";
+const CHAT_FALLBACK = "I can help with the Innovation Hub, Research Centre (including Quantum & AI), community pathways or contacting the team. For anything else, write to hello@cancerinnovate.com.";
 
 function renderChatbot() {
   const widget = document.createElement("div");
